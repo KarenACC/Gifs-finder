@@ -1,0 +1,12 @@
+<div class="bg-dark border-right p-3 sidebar" id="sidebar">
+    <h1 class="text-light">Gifs Finder</h1>
+    <hr class="text-light">
+    <div class="d-flex flex-wrap justify-content-center" id="buttons">
+        <button class="list-group list-group-item list-group-item-action m-2"
+         *ngFor="let tag of tags"
+         (click)="reSearch(tag)">
+         {{ tag | titlecase }}
+        </button>
+    </div>
+</div>
+ 
